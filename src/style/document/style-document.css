@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-Regular"), local("Inter Regular"), url("../../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-Medium"), local("Inter Medium"), url("../../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-SemiBold"), local("Inter SemiBold"), url("../../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-Bold"), local("Inter Bold"), url("../../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Inter";
+}
+
+.container {
+  padding: 0 40px;
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1580px;
+  margin-bottom: 32px;
+}
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+.nav__list .item {
+  list-style-type: none;
+}
+.nav__list .item a {
+  text-decoration: none;
+  color: #7d8591;
+}
+
+.document__container .document__wrap .document__content {
+  max-width: 1045px;
+}
+.document__container .document__wrap .document__content .document__img {
+  width: 100%;
+}
+.document__container .document__wrap .document__content .accordion {
+  border-radius: 24px;
+  background: #f5f5f5;
+  padding: 42px;
+}
+.document__container .document__wrap .document__content .accordion__button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  color: #1f2937;
+  font-weight: 600;
+  line-height: normal;
+  border: 0;
+  background-color: transparent;
+  justify-content: space-between;
+}
+.document__container .document__wrap .document__content .accordion__button div {
+  color: #ffffff;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: #66c3d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.document__container .document__wrap .document__content .accordion__text {
+  display: none;
+  overflow: hidden;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  color: #23272f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+.document__container .document__wrap .document__content .accordion__text--active {
+  display: block;
+}/*# sourceMappingURL=style-document.css.map */

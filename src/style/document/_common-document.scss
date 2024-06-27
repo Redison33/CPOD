@@ -1,0 +1,102 @@
+@import '../_vars.scss';
+@import '../_mixin.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Inter';
+}
+.container {
+    padding: 0 40px;
+    max-width: 1580px;
+    margin: 0 auto;
+}
+.nav {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1580px;
+    margin-bottom: 32px;
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+        .item {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: #7d8591;
+            }
+        }
+    }
+}
+.document {
+    &__container {
+        .document__title {
+        }
+        .document__wrap {
+            .document__content {
+                max-width: 1045px;
+                .document__img {
+                    width: 100%;
+                }
+                .accordion {
+                    border-radius: 24px;
+                    background: #f5f5f5;
+                    padding: 42px;
+                    &__button {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        font-size: 32px;
+                        color: #1f2937;
+                        font-weight: 600;
+                        line-height: normal;
+                        border: 0;
+                        background-color: transparent;
+                        justify-content: space-between;
+                        div {
+                            color: $primary-light;
+                            width: 52px;
+                            height: 52px;
+                            border-radius: 12px;
+                            background-color: $primary-blue;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                    &__text {
+                        display: none;
+                        overflow: hidden;
+                        padding: 24px;
+                        background-color: $primary-light;
+                        border-radius: 24px;
+                        color: $secondary-dark;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: normal;
+                        max-height: 0;
+                        transition: max-height 0.3s ease-in-out;
+                        &--active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

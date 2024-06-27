@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/libs/nouislider.min.css" />
+        <link rel="stylesheet" href="./src/style/normalize.css" />
+        <link rel="stylesheet" href="./src/style/catalog/style-catalog.css" />
+        <title>Каталог</title>
+    </head>
+    <body>
+        <main>
+            <div class="nav">
+                <ol class="nav__list list">
+                    <li class="list__item item"><a href="">Главная</a></li>
+                    <li class="list__item item"><a href="">/ Каталог</a></li>
+                </ol>
+            </div>
+            <div class="menu-overlay"></div>
+            <div class="filter__menu menu">
+                <div class="menu__filter">
+                    <h2 class="menu__title">Фильтр</h2>
+                    <div class="menu__switch switch">
+                        <span class="switch__option">Регистрация</span>
+                        <label class="switch__wrap" for="switch1">
+                            <input type="checkbox" id="switch1" class="switch__input" aria-label="Цвет" />
+                            <span class="switch__slider"></span>
+                        </label>
+                    </div>
+                    <div class="menu__wrap menu__wrap-direction">
+                        <h3 class="menu__title">Направление</h3>
+                        <label class="menu__checkbox" for="checkboxDirection1">
+                            <input class="test" type="checkbox" id="checkboxDirection1" />
+                            <span class="test2">Наука</span>
+                        </label>
+                        <label class="menu__checkbox" for="checkboxDirection2">
+                            <input type="checkbox" id="checkboxDirection2" />
+                            <span>Спорт</span>
+                        </label>
+                        <label class="menu__checkbox" for="checkboxDirection3">
+                            <input type="checkbox" id="checkboxDirection3" />
+                            <span>Искусство</span>
+                        </label>
+                        <label class="menu__checkbox" for="checkboxDirection4">
+                            <input type="checkbox" id="checkboxDirection4" />
+                            <span>Промыслы</span>
+                        </label>
+                    </div>
+                    <div class="menu__wrap menu__wrap-type">
+                        <h3 class="menu__title">Тип</h3>
+                        <label class="menu__checkbox" for="checkboxType1">
+                            <input type="checkbox" id="checkboxType1" />
+                            <span>Дистанционная программа</span>
+                        </label>
+                        <label class="menu__checkbox" for="checkboxType2">
+                            <input type="checkbox" id="checkboxType2" />
+                            <span>Очная программа</span>
+                        </label>
+                        <label class="menu__checkbox" for="checkboxType3">
+                            <input type="checkbox" id="checkboxType3" />
+                            <span>Очно-заочная программа</span>
+                        </label>
+                    </div>
+                    <div class="menu__wrap menu__wrap-age">
+                        <h3 class="menu__title">Возраст</h3>
+                        <div class="input-wrap">
+                            <input type="number" class="menu__input menu__input-1" min="1" max="99" />
+                            <input type="number" class="menu__input menu__input-2" min="1" max="99" />
+                        </div>
+                        <div class="menu__sliderRange" id="rangeSlider"></div>
+                    </div>
+                </div>
+                <div class="menu__buttons">
+                    <button class="menu__button">Применить</button>
+                    <button class="menu__button menu__button-reset">Сбросить</button>
+                </div>
+            </div>
+            <section class="catalog">
+                <div class="catalog__container container">
+                    <h1 class="catalog__title">Каталог</h1>
+                    <div class="catalog__filter filter">
+                        <div class="filter__switch switch">
+                            <span class="switch__option">Регистрация</span>
+                            <label class="switch__wrap" for="switch2">
+                                <input type="checkbox" id="switch2" class="switch__input" aria-label="Цвет" />
+                                <span class="switch__slider"></span>
+                            </label>
+                        </div>
+                        <button class="filter__button filter__button-open">
+                            Направления
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5L10 12.5L15 7.5" stroke="#111010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="filter__button filter__button-open">
+                            Тип
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5L10 12.5L15 7.5" stroke="#111010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="filter__button filter__button-open">
+                            Возраст
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5L10 12.5L15 7.5" stroke="#111010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="filter__button filter__button-reset">Сбросить</button>
+                    </div>
+                    <div class="catalog__content">
+                        <div class="catalog__card card">
+                            <img src="./src/img/card.png" alt="" class="card__img" />
+                            <div class="card__content">
+                                <h2 class="card__title">Серия онлайн консультаций</h2>
+                                <div class="card__tags">
+                                    <span class="card__tag">Наука</span>
+                                    <span class="card__tag">Дистанционная программа</span>
+                                </div>
+                                <div class="card__wrap">
+                                    <div class="card__info info">
+                                        <div class="info__wrap">
+                                            <p class="info__label">Начало</p>
+                                            <p class="info__text">15 марта</p>
+                                        </div>
+                                        <div class="info__wrap">
+                                            <p class="info__label">Окончание</p>
+                                            <p class="info__text">31 янв 2025</p>
+                                        </div>
+                                        <div class="info__wrap">
+                                            <p class="info__label">Возраст</p>
+                                            <p class="info__text">99-99 лет</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__wrap-button">
+                                        <button class="card__button">Зарегистрироваться</button>
+                                        <p class="card__timeLeft">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                                    stroke="black"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            Осталось <span>9999</span> дней
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__card card">
+                            <img src="./src/img/card.png" alt="" class="card__img" />
+                            <div class="card__content">
+                                <h2 class="card__title">Серия онлайн консультаций</h2>
+                                <div class="card__tags">
+                                    <span class="card__tag">Наука</span>
+                                    <span class="card__tag">Дистанционная программа</span>
+                                </div>
+                                <div class="card__wrap">
+                                    <div class="card__info info">
+                                        <div class="info__wrap">
+                                            <p class="info__label">Начало</p>
+                                            <p class="info__text">15 марта</p>
+                                        </div>
+                                        <div class="info__wrap">
+                                            <p class="info__label">Окончание</p>
+                                            <p class="info__text">31 янв 2025</p>
+                                        </div>
+                                        <div class="info__wrap">
+                                            <p class="info__label">Возраст</p>
+                                            <p class="info__text">99-99 лет</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__wrap-button">
+                                        <button class="card__button">Зарегистрироваться</button>
+                                        <p class="card__timeLeft">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                                    stroke="black"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            Осталось <span>9999</span> дней
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__pagination pagination">
+                        <button class="pagination__button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18L9 12L15 6" stroke="#66C3D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="pagination__pages">
+                            <button class="pagination__page pagination__page--active">1</button>
+                            <button class="pagination__page">2</button>
+                            <button class="pagination__page">3</button>
+                            <button class="pagination__page">4</button>
+                            <button class="pagination__page">5</button>
+                            <button class="pagination__page">...</button>
+                            <button class="pagination__page">7</button>
+                        </div>
+                        <button class="pagination__button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 18L15 12L9 6" stroke="#66C3D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./src/libs/nouislider.min.js"></script>
+        <script src="./src/js/main.js"></script>
+    </body>
+</html>

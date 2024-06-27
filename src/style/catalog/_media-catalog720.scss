@@ -1,0 +1,64 @@
+@import '../_vars.scss';
+@import '../_mixin.scss';
+
+@media (max-width: 1000px) {
+    .catalog {
+        margin-bottom: 64px;
+        &__container {
+            .catalog__content {
+                .card {
+                    &__content {
+                        .card__tags {
+                            margin-bottom: 12px;
+                        }
+                        .card__wrap {
+                            flex-direction: column;
+                            gap: 12px;
+                            align-items: start;
+                            .info {
+                                width: 100%;
+                                justify-content: space-between;
+                            }
+                            &-button {
+                                width: 100%;
+                                flex-direction: row;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 880px) {
+    .container {
+        padding: 0 24px;
+    }
+    .nav {
+        padding: 0 24px;
+    }
+    .catalog {
+        margin-bottom: 64px;
+        &__container {
+            .filter {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .filter__button {
+                    &-reset {
+                        justify-content: center;
+                        flex: 1 1 auto;
+                    }
+                }
+            }
+            .catalog__content {
+                .card {
+                    flex-direction: column;
+                    &__img {
+                        width: unset;
+                    }
+                }
+            }
+        }
+    }
+}

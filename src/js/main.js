@@ -1,4 +1,30 @@
 window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('#switch2').addEventListener('click', () => {
+        if (document.querySelector('#switch2').checked === true) {
+            document.querySelector('#switch1').checked = true;
+        } else {
+            document.querySelector('#switch1').checked = false;
+        }
+    });
+    document.querySelector('#switch1').addEventListener('click', () => {
+        if (document.querySelector('#switch1').checked === true) {
+            document.querySelector('#switch2').checked = true;
+        } else {
+            document.querySelector('#switch2').checked = false;
+        }
+    });
+    for (const buttonReset of document.querySelectorAll('.button-reset')) {
+        buttonReset.addEventListener('click', () => {
+            document.querySelector('#switch1').checked = false;
+            document.querySelector('#switch2').checked = false;
+            for (const checkbox of document.querySelectorAll('.menu__checkbox')) {
+                checkbox.querySelector('input').checked = false;
+                console.log(checkbox.querySelector('input'));
+            }
+            rangeSlider.noUiSlider.set([1, 99]);
+        });
+    }
+
     const rangeSlider = document.getElementById('rangeSlider');
     if (rangeSlider) {
         noUiSlider.create(rangeSlider, {

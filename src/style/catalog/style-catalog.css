@@ -42,14 +42,12 @@ body {
 }
 
 .container {
-  padding: 0 40px;
   max-width: 1580px;
   margin: 0 auto;
 }
 
 .nav {
   margin: 0 auto;
-  padding: 0 40px;
   max-width: 1580px;
   margin-bottom: 32px;
 }
@@ -402,6 +400,7 @@ body {
 .catalog__container .catalog__content .card {
   border-radius: 24px;
   display: flex;
+  flex-direction: row;
   background-color: #eef0f6;
 }
 .catalog__container .catalog__content .card__img {
@@ -535,6 +534,14 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 1600px) {
+  .container {
+    padding: 0 40px;
+  }
+  .nav {
+    padding: 0 40px;
+  }
+}
 @media (max-width: 1260px) {
   .catalog {
     margin-bottom: 64px;

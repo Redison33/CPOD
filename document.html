@@ -22,12 +22,31 @@
                     <div class="document__wrap">
                         <div class="document__content">
                             <img src="./src/img/document.jpg" alt="" class="document__img" />
+                            <div class="document__info info">
+                                <div class="info__tags">
+                                    <span class="info__tag">Наука</span>
+                                    <span class="info__tag">Дистанционная программа</span>
+                                </div>
+                                <div class="info__wrap">
+                                    <p class="info__label">Начало</p>
+                                    <p class="info__text">15 марта</p>
+                                </div>
+                                <div class="info__wrap">
+                                    <p class="info__label">Окончание</p>
+                                    <p class="info__text">31 янв 2025</p>
+                                </div>
+                                <div class="info__wrap">
+                                    <p class="info__label">Возраст</p>
+                                    <p class="info__text">99-99 лет</p>
+                                </div>
+                                <button class="info__button">Зарегистрироваться</button>
+                            </div>
                             <div class="document__accordion accordion">
-                                <button class="accordion__button">
+                                <button class="accordion__button accordion__button--active">
                                     Описание
                                     <div>+</div>
                                 </button>
-                                <p class="accordion__text">
+                                <p class="accordion__text accordion__text--active">
                                     Описание всегда открыто!! Программа «Встречи с наукой. 1 сезон» предназначена для учащихся 2-6 классов
                                     общеобразовательных организаций Свердловской области и нацелена на развитие способностей обучающихся в области
                                     естественных наук. Обзорные видео лекции и практические задания в виде игрового квеста помогут ребятам в летние
@@ -53,7 +72,70 @@
                                     Документы
                                     <div>+</div>
                                 </button>
-                                <p class="accordion__text">need fix</p>
+                                <div class="accordion__text">
+                                    <div class="document__buttons">
+                                        <button class="document__button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path
+                                                    d="M16.25 15.75H2.75M14 8.25L9.5 12.75M9.5 12.75L5 8.25M9.5 12.75V2.25"
+                                                    stroke="#868599"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            Название документа
+                                        </button>
+                                        <button class="document__button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path
+                                                    d="M16.25 15.75H2.75M14 8.25L9.5 12.75M9.5 12.75L5 8.25M9.5 12.75V2.25"
+                                                    stroke="#868599"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            Название документа
+                                        </button>
+                                        <button class="document__button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path
+                                                    d="M16.25 15.75H2.75M14 8.25L9.5 12.75M9.5 12.75L5 8.25M9.5 12.75V2.25"
+                                                    stroke="#868599"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            Название документа
+                                        </button>
+                                        <button class="document__button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path
+                                                    d="M16.25 15.75H2.75M14 8.25L9.5 12.75M9.5 12.75L5 8.25M9.5 12.75V2.25"
+                                                    stroke="#868599"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            Название документа
+                                        </button>
+                                        <button class="document__button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path
+                                                    d="M16.25 15.75H2.75M14 8.25L9.5 12.75M9.5 12.75L5 8.25M9.5 12.75V2.25"
+                                                    stroke="#868599"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                            Название документа
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="document__accordion accordion">
                                 <button class="accordion__button">
@@ -65,22 +147,115 @@
                                     tempora consequatur minus amet eveniet ex temporibus cupiditate neque, quisquam ipsum delectus harum vel quasi.
                                 </p>
                             </div>
+                            <div class="document__form form">
+                                <h3 class="form__title">Зарегистрироваться</h3>
+                                <form action="" id="form">
+                                    <label for="name" class="input-label"
+                                        >ФИО
+                                        <input required type="text" id="name" class="from__input" name="fullname" />
+                                    </label>
+                                    <label for="tel" class="input-label"
+                                        >Номер телефона
+                                        <input required type="tel" id="tel" class="from__input" name="phone" />
+                                    </label>
+                                    <label for="email" class="input-label"
+                                        >Почта
+                                        <input required type="email" id="email" class="from__input" name="email" />
+                                    </label>
+                                    <label for="file" class="input-label">
+                                        Загрузить файл
+                                        <input required type="file" id="file" class="from__input" name="file" />
+                                    </label>
+                                    <label for="" class="input-label">
+                                        События
+                                        <select name="" id="" name="event" required>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </label>
+                                    <button class="form__button">Зарегистрироваться</button>
+                                    <div class="checkbox">
+                                        <label class="checkbox__container">
+                                            <p>
+                                                Нажимая кнопку «Регистрация», я даю свое согласие на обработку моих персональных данных, в
+                                                соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и
+                                                для целей, определенных в Согласии на обработку персональных данных
+                                            </p>
+                                            <input required type="checkbox" checked="checked" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <!-- <aside class="document__aside">
+                        <aside class="document__aside">
                             <div class="document__info info">
                                 <div class="info__tags">
                                     <span class="info__tag">Наука</span>
                                     <span class="info__tag">Дистанционная программа</span>
                                 </div>
                                 <div class="info__wrap">
-
+                                    <p class="info__label">Начало</p>
+                                    <p class="info__text">15 марта</p>
                                 </div>
+                                <div class="info__wrap">
+                                    <p class="info__label">Окончание</p>
+                                    <p class="info__text">31 янв 2025</p>
+                                </div>
+                                <div class="info__wrap">
+                                    <p class="info__label">Возраст</p>
+                                    <p class="info__text">99-99 лет</p>
+                                </div>
+                                <button class="info__button">Зарегистрироваться</button>
                             </div>
-                        </aside> -->
+                            <div class="document__form form">
+                                <h3 class="form__title">Зарегистрироваться</h3>
+                                <form action="" id="form">
+                                    <label for="name" class="input-label"
+                                        >ФИО
+                                        <input required type="text" id="name" class="from__input" name="fullname" />
+                                    </label>
+                                    <label for="tel" class="input-label"
+                                        >Номер телефона
+                                        <input required type="tel" id="tel" class="from__input" name="phone" />
+                                    </label>
+                                    <label for="email" class="input-label"
+                                        >Почта
+                                        <input required type="email" id="email" class="from__input" name="email" />
+                                    </label>
+                                    <label for="file" class="input-label">
+                                        Загрузить файл
+                                        <input required type="file" id="file" class="from__input" name="file" />
+                                    </label>
+                                    <label for="" class="input-label">
+                                        События
+                                        <select name="" id="" name="event" required>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </label>
+                                    <button class="form__button">Зарегистрироваться</button>
+                                    <div class="checkbox">
+                                        <label class="checkbox__container">
+                                            <p>
+                                                Нажимая кнопку «Регистрация», я даю свое согласие на обработку моих персональных данных, в
+                                                соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и
+                                                для целей, определенных в Согласии на обработку персональных данных
+                                            </p>
+                                            <input required type="checkbox" checked="checked" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </aside>
                     </div>
                 </div>
             </section>
         </main>
+        <script src="./src/libs/jquery-3.6.4.min.js"></script>
+        <script src="./src/libs/jquery.validate.min.js"></script>
+        <script src="./src/libs/jquery.mask.min.js"></script>
         <script src="./src/js/document.js"></script>
     </body>
 </html>

@@ -1,4 +1,37 @@
 @import '../_vars.scss';
 @import '../_mixin.scss';
 @media (max-width: 580px) {
+    .nav {
+        &__list {
+            flex-wrap: wrap;
+        }
+    }
+    .document {
+        &__container {
+            .document__title {
+                font-size: 24px;
+                line-height: normal;
+            }
+            .document__wrap {
+                display: block;
+                .document__content {
+                    .accordion {
+                        padding: 16px;
+                        &__button {
+                            font-size: 18px;
+                        }
+                    }
+                    .info {
+                        padding: 16px;
+                    }
+                    .form {
+                        padding: 16px;
+                        &__title {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

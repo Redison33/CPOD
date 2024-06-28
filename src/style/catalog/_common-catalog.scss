@@ -20,13 +20,13 @@ body {
     font-family: 'Inter';
 }
 .container {
-    padding: 0 40px;
+    // padding: 0 40px;
     max-width: 1580px;
     margin: 0 auto;
 }
 .nav {
     margin: 0 auto;
-    padding: 0 40px;
+
     max-width: 1580px;
     margin-bottom: 32px;
     &__list {
@@ -390,6 +390,7 @@ body {
             .card {
                 border-radius: 24px;
                 display: flex;
+                flex-direction: row;
                 background-color: $card-backroung;
                 &__img {
                     width: 341px;

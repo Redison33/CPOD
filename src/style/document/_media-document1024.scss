@@ -1,4 +1,79 @@
 @import '../_vars.scss';
 @import '../_mixin.scss';
+@media (max-width: 1600px) {
+    .container {
+        padding: 0 40px;
+    }
+    .nav {
+        padding: 0 40px;
+    }
+}
 @media (max-width: 1260px) {
+    .container {
+        padding: 0 40px;
+    }
+    .document {
+        margin-bottom: 64px;
+        &__container {
+            .document__title {
+                font-size: 32px;
+                margin-bottom: 24px;
+            }
+            .document__wrap {
+                .document__content {
+                    max-width: 1045px;
+                    .document__img {
+                        margin-bottom: 24px;
+                    }
+                    .accordion {
+                        padding: 24px;
+                        &__button {
+                            font-size: 24px;
+                        }
+                        &__text {
+                            font-size: 14px;
+                            .document__buttons {
+                                gap: 12px;
+                                .document__button {
+                                    padding: 12px 24px;
+                                }
+                            }
+                        }
+                    }
+                    .info {
+                        display: none;
+                    }
+                    .form {
+                        display: none;
+                    }
+                }
+                .document__aside {
+                    max-width: 350px;
+                }
+                .info {
+                    padding: 24px;
+                    &__tags {
+                        .info__tag {
+                            font-size: 14px;
+                        }
+                    }
+                    &__wrap {
+                        .info__text {
+                            font-size: 18px;
+                        }
+                    }
+                    &__button {
+                        padding: 12px 24px;
+                        font-size: 14px;
+                    }
+                }
+                .form {
+                    padding: 24px;
+                    &__title {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -48,6 +48,7 @@ body {
 
 .nav {
   margin: 0 auto;
+  margin-top: 12px;
   max-width: 1580px;
   margin-bottom: 32px;
 }
@@ -87,6 +88,12 @@ body {
   width: 100%;
   margin-bottom: 42px;
   border-radius: 24px;
+}
+.document__container .document__wrap .document__content .info {
+  display: none;
+}
+.document__container .document__wrap .document__content .form {
+  display: none;
 }
 .document__container .document__wrap .document__content .accordion {
   border-radius: 24px;
@@ -370,12 +377,6 @@ body {
   .document__container .document__wrap .document__content .accordion__text .document__buttons .document__button {
     padding: 12px 24px;
   }
-  .document__container .document__wrap .document__content .info {
-    display: none;
-  }
-  .document__container .document__wrap .document__content .form {
-    display: none;
-  }
   .document__container .document__wrap .document__aside {
     max-width: 350px;
   }
@@ -412,6 +413,12 @@ body {
   .document__container .document__title {
     font-size: 32px;
     margin-bottom: 24px;
+  }
+  .document__container .info {
+    display: block;
+  }
+  .document__container .form {
+    display: block;
   }
   .document__container .document__wrap .document__content .info {
     display: block;

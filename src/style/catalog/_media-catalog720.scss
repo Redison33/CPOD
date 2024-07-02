@@ -10,6 +10,7 @@
                     &__content {
                         .card__tags {
                             margin-bottom: 12px;
+                            max-width: 400px;
                         }
                         .card__wrap {
                             flex-direction: column;
@@ -56,6 +57,12 @@
                     flex-direction: column;
                     &__img {
                         width: unset;
+                    }
+                    &__content {
+                        .card__tags {
+                            max-width: unset;
+                            width: 100%;
+                        }
                     }
                 }
             }

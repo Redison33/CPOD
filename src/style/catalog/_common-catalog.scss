@@ -399,6 +399,8 @@ body {
                 &__content {
                     padding: 20px;
                     width: 100%;
+                    max-width: 100%;
+                    // position: relative;
                     .card__title {
                         font-size: 24px;
                         color: $primary-dark;
@@ -415,9 +417,15 @@ body {
                         height: 30px;
                     }
                     .card__tags {
-                        display: flex;
-                        gap: 8px;
-                        max-width: 900px;
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        // gap: 8px;
+                        margin-bottom: 8px;
+                        text-wrap: nowrap;
+                        // max-width: 50%;
+                        // width: 100%;
+                        max-width: 700px;
+                        // width: 70%;
                         overflow-x: scroll;
                         .card__tag {
                             display: inline-block;

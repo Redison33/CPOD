@@ -72,4 +72,35 @@ window.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.menu-overlay').classList.remove('menu-overlay--active');
         document.querySelector('body').removeAttribute('style');
     });
+    const slider = document.querySelectorAll('.card__tags');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    for (const cardSlider of slider) {
+        cardSlider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            cardSlider.classList.add('active'); // добавить класс, если нужно изменить стиль при активной прокрутке
+            startX = e.pageX - cardSlider.offsetLeft;
+            scrollLeft = cardSlider.scrollLeft;
+        });
+
+        cardSlider.addEventListener('mouseleave', () => {
+            isDown = false;
+            cardSlider.classList.remove('active');
+        });
+
+        cardSlider.addEventListener('mouseup', () => {
+            isDown = false;
+            cardSlider.classList.remove('active');
+        });
+
+        cardSlider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - cardSlider.offsetLeft;
+            const walk = (x - startX) * 2; // множитель для ускорения прокрутки
+            cardSlider.scrollLeft = scrollLeft - walk;
+        });
+    }
 });

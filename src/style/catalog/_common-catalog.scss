@@ -417,6 +417,8 @@ body {
                     .card__tags {
                         display: flex;
                         gap: 8px;
+                        max-width: 900px;
+                        overflow-x: scroll;
                         .card__tag {
                             display: inline-block;
                             padding: 8px 16px;
@@ -426,6 +428,15 @@ body {
                             color: $primary-dark;
                             font-weight: 500;
                             line-height: normal;
+                            text-wrap: nowrap;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            -o-user-select: none;
+                            user-select: none;
+                        }
+                        &::-webkit-scrollbar {
+                            display: none !important;
                         }
                     }
                     .card__wrap {
